@@ -62,10 +62,11 @@ function creerLegende() {
   });
 }
 
-// CRÉER LES 3 GRAPHIQUES 
+// CRÉER LES 4 GRAPHIQUES 
 function creerGraphiques(sallesAUtiliser = salles) {
   // Crée les graphiques pour les salles fournies (par défaut toutes les salles)
   creerGraphique('co2', 'co2Chart', sallesAUtiliser);
+  creerGraphique('hum', 'humChart', sallesAUtiliser);
   creerGraphique('tmp', 'tmpChart', sallesAUtiliser);
   creerGraphique('voct', 'voctChart', sallesAUtiliser);
 }
@@ -150,6 +151,8 @@ function appliquerFiltres() {
   
   document.getElementById('co2Section').style.display = 
     (parametreSelectionne === 'all' || parametreSelectionne === 'co2') ? 'block' : 'none';
+  document.getElementById('humSection').style.display = 
+    (parametreSelectionne === 'all' || parametreSelectionne === 'hum') ? 'block' : 'none';
   document.getElementById('tmpSection').style.display = 
     (parametreSelectionne === 'all' || parametreSelectionne === 'tmp') ? 'block' : 'none';
   document.getElementById('voctSection').style.display = 

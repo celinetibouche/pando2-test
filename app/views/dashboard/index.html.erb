@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pando2 - Qualité de l'air</title>
+  <title>"Pando2 - Qualité de l'air"</title>
   
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -35,6 +35,7 @@
           <select id="paramFilter" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
             <option value="all">Tous les paramètres</option>
             <option value="co2">CO2</option>
+            <option value="hum">Humidité (HUM)</option>
             <option value="tmp">Température (TMP)</option>
             <option value="voct">VOCT</option>
           </select>
@@ -49,6 +50,11 @@
       <div class="bg-white rounded-lg shadow p-6" id="co2Section">
         <h3 class="text-xl font-bold text-gray-800 mb-4">CO2</h3>
         <canvas id="co2Chart" height="80"></canvas>
+      </div>
+
+      <div class="bg-white rounded-lg shadow p-6" id="humSection">
+        <h3 class="text-xl font-bold text-gray-800 mb-4">HUM (Humidité)</h3>
+        <canvas id="humChart" height="80"></canvas>
       </div>
 
       <div class="bg-white rounded-lg shadow p-6" id="tmpSection">

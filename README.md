@@ -11,7 +11,7 @@ Cette application Ruby on Rails affiche les mesures de capteurs de qualité de l
 - **Format des données** : les CSV sont placés dans `public/data/` afin d'être servis statiquement et lus directement depuis le navigateur.
 - **Librairie graphique** : Chart.js 
 - **Parsing CSV** : PapaParse 
-
+@
 
 
 ## Prérequis
