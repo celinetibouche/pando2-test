@@ -24,7 +24,7 @@ function chargerCSV(salle) {
   });
 }
 
-// HARGER TOUS LES CSV 
+// CHARGER TOUS LES CSV 
 async function chargerTout() {
   const promesses = salles.map(salle => chargerCSV(salle));
   await Promise.all(promesses);
@@ -47,7 +47,7 @@ function remplirFiltreSalles() {
   });
 }
 
-// RÉER LA LÉGENDE (pastilles) 
+// CRÉER LA LÉGENDE (pastilles) 
 function creerLegende() {
   const conteneur = document.getElementById('roomLegend');
   
